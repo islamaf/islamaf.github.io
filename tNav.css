@@ -1,0 +1,124 @@
+nav {
+  font-family: 'Raleway', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 10vh;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.home a {
+  background-color: #cbcbcb;
+  transition: all 0.5s ease-in;
+}
+
+/* English and Russian versions */
+.topnav-links {
+  margin-right: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav-links a {
+  margin-left: 20px;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.topnav-links a:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+  transition: all 0.15s linear;
+}
+
+/* Arabic version */
+.topnav-links-ar {
+  margin-right: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav-links-ar a {
+  margin-left: 20px;
+  /* letter-spacing: 2px; */
+  font-size: 16px;
+}
+
+.topnav-links-ar a:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+  transition: all 0.15s linear;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-left: 0px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+    display: block;
+    margin: 0;
+    min-height: 8vh;
+  }
+
+  .logo {
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .topnav-links {
+    justify-content: center;
+  }
+
+  .topnav-links a {
+    font-size: 14px;
+  }
+}
