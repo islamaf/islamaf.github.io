@@ -39,3 +39,14 @@ body, body * {
 {
   opacity:1;
 }
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:atfer {
+  content: "";
+  display: table;
+  clear: both;
+}
