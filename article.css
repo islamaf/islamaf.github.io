@@ -114,7 +114,7 @@ article hr {
 .waip {
   display: flex;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   position: relative;
   width: 50%;
   left: 28%;
