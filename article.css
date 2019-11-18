@@ -26,6 +26,7 @@ article p {
 .container img {
   display: block;
   width: 1480px;
+  height: 900px;
 }
 
 /* Text on Image */
