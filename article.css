@@ -5,10 +5,16 @@ article {
   line-height: 35px;
 }
 
-article h1, h2, h3 {
+article h1 {
   margin-bottom: 5px;
   text-align: center;
   font-size: 24px;
+}
+
+article h2 {
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 20px;
 }
 
 article p {
@@ -33,7 +39,7 @@ article p {
 .centered {
   position: absolute;
   top: 45%;
-  left: 60%;
+  left: 55%;
   transform: translate(-50%, -50%);
 }
 
@@ -106,7 +112,7 @@ article hr {
   justify-content: center;
 }
 
-.wai h1 {
+.wai h1, h2 {
   border-bottom: 4px solid yellow;
   margin-bottom: 15px;
 }
@@ -114,10 +120,28 @@ article hr {
 .waip {
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   position: relative;
   width: 50%;
   left: 28%;
+}
+
+.waip:hover {
+  background-color: #D3D3D3;
+}
+
+.waip a {
+  font-style: italic;
+  color: blue;
+}
+
+.waip a:hover {
+  text-decoration: underline;
+}
+
+.waip li {
+  padding-right: 70px;
+  list-style: inside;
 }
 
 /* Arabic version */
