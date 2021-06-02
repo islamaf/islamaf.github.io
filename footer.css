@@ -21,6 +21,15 @@ footer {
   margin-left: 5%;
 }
 
+.content-list li a {
+  transition: all 0.8s ease;
+}
+
+.content-list li a:hover {
+  margin-left: 40px;
+  transition: all 0.8s ease;
+}
+
 footer h1 {
   font-size: 34px;
 }
@@ -36,12 +45,6 @@ footer h1 {
 
 #email {
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
-}
-
-#email:hover {
-  margin-left: 40px;
-  transition: all 0.4s ease-in-out;
 }
 
 #email::after {
