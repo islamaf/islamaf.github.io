@@ -47,15 +47,19 @@ footer h1 {
   cursor: pointer;
 }
 
-#email::after {
+/* #email::after {
   content: "Islam_9t9@yahoo.com";
+} */
+
+#email:hover span {
+  display: none;
 }
 
-#email:hover::after {
+#email:hover:before {
   content: "Copy to clipboard";
 }
 
-#email:active::after {
+#email:active::before {
   content: "Copied!";
 }
 
