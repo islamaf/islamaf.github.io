@@ -10,7 +10,12 @@ html {
  /* Photo by Kari Shea on Unsplash */
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body, body * {
+  background-color: #e9edec;
   margin:          unset;
   box-sizing:      unset;
   padding:         unset;
@@ -40,7 +45,7 @@ body, body * {
   opacity:1;
 }
 
-.column {
+/* .column {
   float: left;
   width: 50%;
 }
@@ -49,4 +54,15 @@ body, body * {
   content: "";
   display: table;
   clear: both;
+} */
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 22px;
+  height: 400px; /* Should be removed. Only for demonstration */
 }

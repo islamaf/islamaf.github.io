@@ -30,83 +30,102 @@
           <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="#me">Me</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
+          <a href="#proj">Projects</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
         </li>
-        <li class="dropdown">
-          <a class="dropbtn">EN&#x25BC;</a>
-          <div class="dropdown-content">
-            <a href="indexar.html">AR</a>
-            <a href="indexru.html">RU</a>
-          </div>
-        </li>
       </ul>
     </nav>
     <article>
-      <figure class="container fade">
-        <img src="kari-shea.jpg" alt="Photo" height="700" width="1223">
-        <div class="centered">
-          <h1>Hi,<br>I'm Islam.<br>Programmer and Web Developer.</h1>
-        </div>
-        <figcaption><p>Photo by <a target='_blank' href="https://unsplash.com/@karishea">Kari Shea</a> on
-          <a target='_blank' href="https://unsplash.com/">Unsplash</a></p></figcaption>
-      </figure>
-      <hr>
-      <section class="wai-p">
-        <div id="me" class="wai">
-          <h1>&#10100; Who am I? &#10101;</h1>
-        </div>
-        <div class="waip grow">
-          <p>I am Islam Abdelfattah. Currently a student at university, hopefully, to earn bachelor's in computer science.
-           Front-end developer and a programmer with several languages.
-           <br>This website is not about my work, so don't expect
-           much in that direction. <b>Updates soon.</b></p>
-        </div>
-        <br>
-        <div class="wai">
-          <h2>&#x3a;Skills&#x3a;</h2>
-        </div>
-        <div class="waip grow">
-          <div class="row">
-            <ul>
-              <div class="column">
-                  <li>C/C++</li>
-                  <li>Python</li>
-              </div>
-              <div class="column">
-                <li>HTML/CSS</li>
-                <li>MatLab</li>
-              </div>
-            </ul>
+      <section class="intro">
+        <div class="row">
+          <div class="column">
+            <img src="profilepic.jpg" alt="Profile Picture" class="profile-pic" id="img">
           </div>
-        </div>
-        <br>
-        <div id="projects" class="wai">
-          <h1>&#47;Projects&#47;</h1>
-        </div>
-        <div class="waip grow">
-          <p style="padding-right: 60px;">Here, you could be able to see my projects on my<br>
-            <a target="_blank" href="https://github.com/islamaf"> GitHub</a>
-            account. You are welcome to check it out!
-          </p>
+          <div class="column">
+            <div class="wai">
+              <h1 id="me">&#10100; Who am I? &#10101;</h1>
+              <p>I'm Islam Abdelfattah. A senior computer science student.<br>
+                Full-stack and software developer who likes to build things from scratch.<br> 
+            </div>
         </div>
       </section>
+      <section id="proj" class="projects">
+        <div class="myprojects">
+          <h1>&num;Projects</h1>
+        </div>
+        <div class="projects-list">
+          <ul>
+            <li>
+              <h2>
+                <a href="#" onclick="this.href='http://mofoa.herokuapp.com';">Museum of Ordinary Artists</a>
+              </h2>
+              <p>A Flask web application for art sharing.</p>
+            </li>
+            <li>
+              <h2>
+                <a href="#" onclick="this.href='http://encrypme.herokuapp.com';">Encrypme</a>
+              </h2>
+              <p>A Django encryption web application.</p>
+            </li>
+            <li>
+              <h2>
+                <a href="#" onclick="this.href='https://github.com/islamaf';">More projects</a>
+              </h2>
+              <p>Other projects that are available on my Github.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer id="contact">
+        <div class="contact">
+          <h1>&#10088;Contact&#10089;</h1>
+        </div>
+        <div class="content-list">
+          <p>Let's collaborate! Feel free to reach out to me through these platforms:</p>
+          <ul>
+            <li>
+              <h2>
+                <a id="email" onclick="copyEmail(this)">
+                  <!-- <span>Islam_9t9@yahoo.com</span> -->
+                </a>
+              </h2>
+            </li>
+            <li>
+              <h2>
+                <a href="https://www.facebook.com/jeezoii">Facebook</a>
+              </h2>
+            </li>
+            <li>
+              <h2>
+                <a href="https://www.instagram.com/islamaf_/">Instagram</a>
+              </h2>
+            </li>
+            <li>
+              <h2>
+                <a href="https://www.linkedin.com/in/islam-abdelfattah-31661b151/">LinkedIn</a>
+              </h2>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="icons">
+          <a class="grow fa fa-envelope" target="_blank" href="mailto: islam_9t9@yahoo.com? subject: subject text"></a>
+          <a class="grow fa fa-facebook" target="_blank" href="https://www.facebook.com/jeezoii"></a>
+          <a class="grow fa fa-instagram" target="_blank" href="https://www.instagram.com/islamaf_/"></a>
+          <a class="grow fa fa-twitter" target="_blank" href="https://twitter.com/islamaf_"></a>
+        </div> -->
+      </footer>
     </article>
-    <footer id="contact">
-      <div class="contact">
-        <h1>&#10088;Contact&#10089;</h1>
-      </div>
-      <div class="icons">
-        <a class="grow fa fa-envelope" target="_blank" href="mailto: islam_9t9@yahoo.com? subject: subject text"></a>
-        <a class="grow fa fa-facebook" target="_blank" href="https://www.facebook.com/jeezoii"></a>
-        <a class="grow fa fa-instagram" target="_blank" href="https://www.instagram.com/islamaf_/"></a>
-        <a class="grow fa fa-twitter" target="_blank" href="https://twitter.com/islamaf_"></a>
-      </div>
-    </footer>
+    <script type="text/javascript">
+      function copyEmail(that) {
+        var inp = document.createElement('input');
+        document.body.appendChild(inp)
+        inp.value = that.textContent
+        inp.select();
+        document.execCommand('copy',false);
+        inp.remove();
+      } 
+    </script>
   </body>
 </html>

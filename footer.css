@@ -1,11 +1,28 @@
 footer {
-  font-family: 'Cairo', sans-serif;
+  /* font-family: 'Cairo', sans-serif; */
+  font-family: 'Literata', serif;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  width: 70%;
   bottom: 0;
   height: 40%;
 }
 
+.content-list p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.content-list li {
+  text-align: left;
+  padding-top: 10px;
+  margin-left: 5%;
+}
+
 footer h1 {
-  font-size: 24px;
+  font-size: 34px;
 }
 
 .contact {
@@ -15,6 +32,28 @@ footer h1 {
 
 .contact h1 {
   border-bottom: 4px solid yellow;
+}
+
+#email {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+#email:hover {
+  margin-left: 40px;
+  transition: all 0.4s ease-in-out;
+}
+
+#email::after {
+  content: "Islam_9t9@yahoo.com";
+}
+
+#email:hover::after {
+  content: "Copy to clipboard";
+}
+
+#email:active::after {
+  content: "Copied!";
 }
 
 .icons {

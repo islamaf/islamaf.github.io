@@ -6,15 +6,15 @@ article {
 }
 
 article h1 {
-  margin-bottom: 5px;
-  text-align: center;
-  font-size: 24px;
+  /* margin-bottom: 5px;
+  text-align: center; */
+  font-size: 34px;
 }
 
 article h2 {
-  margin-bottom: 5px;
-  text-align: center;
-  font-size: 20px;
+  /* margin-bottom: 5px;
+  text-align: center; */
+  font-size: 28px;
 }
 
 article p {
@@ -22,146 +22,68 @@ article p {
   font-size: 16px;
 }
 
-/* Image Container */
-.container {
-  position: relative;
-  text-align: center;
-  transition: all 0.5s ease-out;
-}
-
-.container img {
-  display: block;
-  width: 1480px;
-  height: 900px;
-}
-
-/* Text on Image */
-.centered {
-  position: absolute;
-  top: 45%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-}
-
-.centered h1 {
-  text-align: left;
-  justify-content: center;
-  color: #cbcbcb;
-  font-size: 32px;
-  width: 70%;
-}
-
-/* Russian version */
-.centeredru {
-  position: absolute;
-  top: 45%;
-  left: 58%;
-  transform: translate(-50%, -50%);
-}
-
-.centeredru h1 {
-  text-align: left;
-  justify-content: center;
-  color: #cbcbcb;
-  font-size: 32px;
-  width: 70%;
-}
-
-/* Arabic version */
-.centeredar {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.centeredar h1 {
-  text-align: right;
-  justify-content: center;
-  color: #cbcbcb;
-  font-size: 32px;
-  width: 100%;
-}
-
-/* Credits */
-figcaption p {
-  justify-content: center;
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: rgba(143, 142, 142, 1);
-}
-
-figcaption a {
-  font-style: italic;
-}
-
-article hr {
-  text-align: center;
+.intro, .projects {
   margin: 0 auto;
-  width: 15%;
+  position: relative;
+  width: 70%;
 }
 
-.wai-p {
-  display: block;
-  margin: 10px;
+.intro p {
+  margin: 0;
+  width: 45%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(5%, -50%);
 }
+
+.profile-pic {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  transition: transform 1.2s ease-in-out;
+}
+
+.profile-pic:hover {
+  transform: rotate(360deg);
+}
+
+/* @keyframes spin { 100% { transform:rotate(360deg); } }
+
+.profile-pic:hover {
+    animation:spin 1.5s linear infinite;
+} */
 
 /* wai */
 .wai {
   display: flex;
+  justify-content: flex-start;
+}
+
+.myprojects {
+  display: flex;
   justify-content: center;
 }
 
-.wai h1, h2 {
+.wai h1, .wai h2, .myprojects h1 {
   border-bottom: 4px solid yellow;
   margin-bottom: 15px;
 }
 
-.waip {
-  display: flex;
-  justify-content: center;
-  text-align: left;
-  position: relative;
+#me {
+  top: 20%;
+  position: absolute;
+}
+
+.projects-list li {
+  margin-left: 5%;
   width: 50%;
-  left: 28%;
+  padding: 20px 0px;
+  transition: all 0.8s ease-in-out;
 }
 
-.waip:hover {
-  background-color: #D3D3D3;
-}
-
-.waip a {
-  font-style: italic;
-  color: blue;
-}
-
-.waip a:hover {
-  text-decoration: underline;
-}
-
-.waip li {
-  padding-right: 70px;
-  list-style: inside;
-}
-
-/* Arabic version */
-.wai-ar {
-  display: flex;
-  justify-content: center;
-}
-
-.wai-ar h1 {
-  border-bottom: 4px solid yellow;
-  margin-bottom: 15px;
-}
-
-.waip-ar {
-  display: flex;
-  justify-content: center;
-  text-align: right;
-  position: relative;
-  width: 50%;
-  right: 25%;
+.projects-list li:hover {
+  margin-left: 10%;
 }
 
 /* Responsive */
