@@ -142,6 +142,7 @@ article p {
 
   .wai a {
     top: 75%;
+    line-height: normal;
   }
 
   #me {
