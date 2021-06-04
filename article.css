@@ -86,102 +86,78 @@ article p {
   margin-left: 10%;
 }
 
-/* Responsive */
 @media screen and (max-width: 768px) {
   article {
+    font-family: 'Literata', serif;
     margin: 0;
+    margin-top: 0;
+    line-height: 10px;
   }
-
+  
   article h1 {
+    /* margin-bottom: 5px;
+    text-align: center; */
+    font-size: 28px;
     margin-bottom: 15px;
   }
 
-  .symbol {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container img {
-    margin-top: 15px;
-    width: 385px;
-    height: 300px;
+  article h2 {
+    /* margin-bottom: 5px;
+    text-align: center; */
+    font-size: 22px;
   }
 
-  .centered {
-    position: absolute;
-    top: 45%;
-    left: 58%;
-    transform: translate(-50%, -50%);
+  article p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
   }
-
-  .centered h1 {
-    text-align: left;
-    justify-content: center;
-    color: #cbcbcb;
-    font-size: 10px;
-    width: 60%;
-    line-height: 15px;
-  }
-
-  /* Russian version */
-  .centeredru {
-    position: absolute;
-    top: 45%;
-    left: 58%;
-    transform: translate(-50%, -50%);
-  }
-
-  .centeredru h1 {
-    text-align: left;
-    justify-content: center;
-    color: #cbcbcb;
-    font-size: 10px;
-    width: 60%;
-    line-height: 15px;
-  }
-
-  /* Arabic version */
-  .centeredar {
-    position: absolute;
-    top: 45%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-  }
-
-  .centeredar h1 {
-    text-align: right;
-    justify-content: center;
-    color: #cbcbcb;
-    font-size: 12px;
+  
+  .intro, .projects {
     width: 100%;
-    line-height: 15px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .waip {
-    left: 12%;
-    display: block;
-    width: 80%;
   }
 
-  .waip p {
-    line-height: 20px;
-    font-size: 12px;
+  .profile-pic {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    transition: transform 1.2s ease-in-out;
   }
 
-  /* Arabic version */
-  .waip-ar {
-    display: flex;
+  .wai {
+    text-align: center;
     justify-content: center;
-    text-align: right;
-    position: relative;
-    width: 90%;
-    right: 8%;
   }
 
-  .waip-ar p {
-    line-height: 25px;
+  .wai h1, .wai h2, .myprojects h1 {
+    line-height: normal;
   }
+
+  #me {
+    top: 45%;
+    position: absolute;
+    font-size: 28px;
+  }
+
+  .intro p {
+    width: 90%;
+    margin-left: 5%;
+    top: 53%;
+    left: 0;
+    transform: none;
+    font-size: 22px;
+    line-height: normal;
+    white-space: pre-line;
+  }
+
+  .projects {
+    margin-top: -50%;
+    text-align: center;
+  }
+
+  .projects-list li {
+    width: 90%;
+    line-height: normal;
+    padding: 10px 0px;
+  }  
 }

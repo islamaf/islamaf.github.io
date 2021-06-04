@@ -102,3 +102,23 @@ footer h1 {
   background-color: #0066FF;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    line-height: normal;
+    margin-top: 25px;
+    width: 90%;
+  }
+
+  footer h1 {
+    font-size: 28px;
+  }
+
+  .content-list p {
+    padding-top: 0;
+  }
+
+  .content-list li {
+    text-align: center;
+  }
+}
