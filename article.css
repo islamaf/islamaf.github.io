@@ -70,6 +70,13 @@ article p {
   margin-bottom: 15px;
 }
 
+.wai a {
+  top: 65%;
+  position: absolute;
+  color: black;
+  background-color: yellow;
+}
+
 #me {
   top: 20%;
   position: absolute;
@@ -133,6 +140,10 @@ article p {
     line-height: normal;
   }
 
+  .wai a {
+    top: 75%;
+  }
+
   #me {
     top: 45%;
     position: absolute;
@@ -151,7 +162,7 @@ article p {
   }
 
   .projects {
-    margin-top: -50%;
+    margin-top: -45%;
     text-align: center;
   }
 
