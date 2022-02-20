@@ -116,9 +116,11 @@ nav {
 
   .topnav-links {
     justify-content: center;
+    width: 100%;
   }
 
   .topnav-links a {
     font-size: 14px;
+    white-space: nowrap;
   }
 }

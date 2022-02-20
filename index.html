@@ -1,135 +1,268 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Islam Abdelfattah</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="tNav.css">
-    <link rel="stylesheet" href="article.css">
-    <link rel="stylesheet" href="footer.css">
-    <link href="https://fonts.googleapis.com/css?family=Cairo|Literata|Montserrat:300|Raleway:200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144061270-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-144061270-1');
-    </script>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <a href="index.html"><h1>&#10094;Islam Abdelfattah/&#10095;</h1></a>
-      </div>
-      <ul class="topnav-links">
-        <li class="home fade">
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="#proj">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <article>
-      <section class="intro">
-        <div class="row">
-          <div class="column image-r">
-            <img src="profilepic.jpg" alt="Profile Picture" class="profile-pic" id="img">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islam Abdelfattah</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="tNav.css">
+  <link rel="stylesheet" href="article.css">
+  <link rel="stylesheet" href="footer.css">
+  <link href="https://fonts.googleapis.com/css?family=Cairo|Literata|Montserrat:300|Raleway:200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144061270-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144061270-1');
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <h1>&#10094;Islam Abdelfattah/&#10095;</h1>
+      </a>
+    </div>
+    <ul class="topnav-links">
+      <li class="home fade">
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="#proj">Projects</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <article>
+    <section class="intro">
+      <div class="row">
+        <div class="column image-r">
+          <img src="profilepic.jpg" alt="Profile Picture" class="profile-pic" id="img">
+        </div>
+        <div class="column wai-r">
+          <div class="wai">
+            <h1 id="me">&#10100; Who am I? &#10101;</h1>
+            <p>I'm Islam Abdelfattah. An Egyptian passionate programmer. <br>
+              A senior computer science and applied mathematics student.<br>
+              Full-stack and software developer who likes to build things from scratch.
+            </p>
+            <a href="Islam_Abdelfattah_resume.pdf">
+              CV as PDF
+            </a>
           </div>
-          <div class="column wai-r">
-            <div class="wai">
-              <h1 id="me">&#10100; Who am I? &#10101;</h1>
-              <p>I'm Islam Abdelfattah. A senior computer science student.<br>
-                Full-stack and software developer who likes to build things from scratch.<br>
-              </p>
-              <a href="Islam_Abdelfattah_resume.pdf">
-                My CV
+        </div>
+    </section>
+    <section id="proj" class="projects">
+      <div class="myprojects">
+        <h1>&num;Projects</h1>
+      </div>
+      <div class="projects-list">
+        <ul>
+          <li>
+            <h2>
+              <a href="https://mofoa.herokuapp.com" target="_blank">Museum of Ordinary Artists</a>
+            </h2>
+            <p>A Flask web application for art sharing.</p>
+          </li>
+          <li>
+            <h2>
+              <a href="https://encrypme.herokuapp.com" target="_blank">Encrypme</a>
+            </h2>
+            <p>A Django encryption web application.</p>
+          </li>
+          <li>
+            <h2>
+              <a href="https://github.com/islamaf/News-Collab" target="_blank">NewsCollab</a>
+            </h2>
+            <p>A Flask based web application that collects trending news from multiple news platforms.</p>
+          </li>
+          <li>
+            <h2>
+              <a href="https://thenodeweatherapp.herokuapp.com/" target="_blank">Weather App</a>
+            </h2>
+            <a style="color: blue;" href="https://github.com/islamaf/node-weather-website" target="_blank">Code</a>
+            <p>Weather forecasting web application made using NodeJs.</p>
+          </li>
+          <li>
+            <h2>
+              <a href="https://github.com/islamaf" target="_blank">More projects</a>
+            </h2>
+            <p>Other projects that are available on my Github.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="skills" class="my-cv">
+      <div class="cv-header">
+        <h1>&#8725;&#8725; Skills</h1>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h2>Python</h2>
+          <div>
+            <ul>
+              <li>Flask</li>
+              <li>Django</li>
+              <li>Pandas</li>
+              <li>Numpy</li>
+              <li>FastAPI</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-item">
+          <h2>JavaScript</h2>
+          <div>
+            <ul>
+              <li>VanillaJs</li>
+              <li>NodeJs</li>
+              <li>ExpressJs</li>
+              <li>Ajax</li>
+              <li>jQuery</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-item">
+          <h2>Databases</h2>
+          <div>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>ORM Databases</li>
+              <li>Redis</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-item">
+          <h2>C#</h2>
+        </div>
+        <div class="grid-item">
+          <h2>Java</h2>
+        </div>
+        <div class="grid-item">
+          <h2>C/C++</h2>
+        </div>
+        <div class="grid-item">
+          <h2>HTML/CSS</h2>
+        </div>
+        <div class="grid-item">
+          <h2>Git/Version control</h2>
+        </div>
+        <div class="grid-item">
+          <h2>Docker</h2>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="experience">
+      <div class="xp-header">
+        <h1>Work Experience&#59;</h1>
+      </div>
+      <div class="work-xp">
+        <div class="xp">
+          <h2>Back-end Developer Intern</h2>
+          <div style="display: flex; justify-content: space-between;">
+            <h3>
+              <a href="https://tqniat.com/" target="_blank">Tqniat Lab</a>
+            </h3>
+            <h3>Jan '22 - Present</h3>
+          </div>
+        </div>
+        <div class="xp">
+          <h2>Software Developer Intern</h2>
+          <div style="display: flex; justify-content: space-between;">
+            <h3>
+              <a href="https://ahramsg.com/" target="_blank">Ahram Security Group</a>
+            </h3>
+            <h3>July '21 - Sept '21</h3>
+          </div>
+          <div>
+            <li>Developed Ahram Slitting Software using C# and WPF</li>
+            <li>Developed an algorithm to optimize the produced waste of steel sheet slicing
+              according to several user input and choices.</li>
+            <li>Designed a friendly user interface to set the needed input by the user and display output
+              as also to export excel sheets if needed.</li>
+            <li>Worked closely with the planning team to satisfy their requirements.</li>
+          </div>
+        </div>
+        <div class="xp">
+          <h2>Front-end Developer Intern</h2>
+          <div style="display: flex; justify-content: space-between;">
+            <h3>
+              <a href="https://extracleaning.ae/" target="_blank">Extra Cleaning Services</a>
+            </h3>
+            <h3>Jun '18 - Sept '18</h3>
+          </div>
+          <div>
+            <li>Handled Website front-end programming (primarily using HTML5,
+              CSS3, JS)</li>
+            <li> Completed redesigns of existing websites to improve navigation and
+              enhance visuals.</li>
+            <li>Developed designs to meet specific requirements such as quick-loading sites with particulat layouts.
+            </li>
+            <li>Designed, implemented and monitored web pages and sites for
+              continuous improvement.</li>
+            <li>Tested websites and performed troubleshooting prior to deployment.</li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+      <div class="contact">
+        <h1>&#10088;Contact&#10089;</h1>
+      </div>
+      <div class="content-list">
+        <p>Let's collaborate! Feel free to reach out to me through these platforms:</p>
+        <ul>
+          <li>
+            <h2>
+              <a id="email" onclick="copyEmail(this)">
+                <span>Islam_9t9@yahoo.com</span>
               </a>
-            </div>
-        </div>
-      </section>
-      <section id="proj" class="projects">
-        <div class="myprojects">
-          <h1>&num;Projects</h1>
-        </div>
-        <div class="projects-list">
-          <ul>
-            <li>
-              <h2>
-                <a href="https://mofoa.herokuapp.com">Museum of Ordinary Artists</a>
-              </h2>
-              <p>A Flask web application for art sharing.</p>
-            </li>
-            <li>
-              <h2>
-                <a href="https://encrypme.herokuapp.com">Encrypme</a>
-              </h2>
-              <p>A Django encryption web application.</p>
-            </li>
-            <li>
-              <h2>
-                <a href="https://github.com/islamaf">More projects</a>
-              </h2>
-              <p>Other projects that are available on my Github.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <footer id="contact">
-        <div class="contact">
-          <h1>&#10088;Contact&#10089;</h1>
-        </div>
-        <div class="content-list">
-          <p>Let's collaborate! Feel free to reach out to me through these platforms:</p>
-          <ul>
-            <li>
-              <h2>
-                <a id="email" onclick="copyEmail(this)">
-                  <span>Islam_9t9@yahoo.com</span>
-                </a>
-              </h2>
-            </li>
-            <li>
-              <h2>
-                <a href="https://www.facebook.com/jeezoii">Facebook</a>
-              </h2>
-            </li>
-            <li>
-              <h2>
-                <a href="https://www.instagram.com/islamaf_/">Instagram</a>
-              </h2>
-            </li>
-            <li>
-              <h2>
-                <a href="https://www.linkedin.com/in/islam-abdelfattah-31661b151/">LinkedIn</a>
-              </h2>
-            </li>
-          </ul>
-        </div>
-        <!-- <div class="icons">
-          <a class="grow fa fa-envelope" target="_blank" href="mailto: islam_9t9@yahoo.com? subject: subject text"></a>
-          <a class="grow fa fa-facebook" target="_blank" href="https://www.facebook.com/jeezoii"></a>
-          <a class="grow fa fa-instagram" target="_blank" href="https://www.instagram.com/islamaf_/"></a>
-          <a class="grow fa fa-twitter" target="_blank" href="https://twitter.com/islamaf_"></a>
-        </div> -->
-      </footer>
-    </article>
-    <script type="text/javascript">
-      function copyEmail(that) {
-        var inp = document.createElement('input');
-        document.body.appendChild(inp)
-        inp.value = that.textContent
-        inp.select();
-        document.execCommand('copy',false);
-        inp.remove();
-      } 
-    </script>
-  </body>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="https://www.facebook.com/jeezoii">Facebook</a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="https://www.instagram.com/islamaf_/">Instagram</a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="https://www.linkedin.com/in/islam-abdelfattah-31661b151/">LinkedIn</a>
+            </h2>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </article>
+  <script type="text/javascript">
+    function copyEmail(that) {
+      var inp = document.createElement('input');
+      document.body.appendChild(inp)
+      inp.value = that.textContent
+      inp.select();
+      document.execCommand('copy', false);
+      inp.remove();
+    } 
+  </script>
+</body>
+
 </html>
