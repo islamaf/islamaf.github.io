@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islam Abdelfattah</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tNav.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Literata|Montserrat:300|Raleway:200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <h1>&#10094;Islam Abdelfattah/&#10095;</h1>
+            </a>
+        </div>
+        <ul class="topnav-links">
+            <li class="home fade">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="skills.html">Skills</a>
+            </li>
+            <li>
+                <a href="experience.html">Experience</a>
+            </li>
+            <li>
+                <a style="border-bottom: 2px solid rgba(0, 0, 0, 0.8)" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="contact">
+        <div class="content-list">
+            <p>Let's collaborate! Feel free to reach out to me through these platforms:</p>
+            <ul>
+                <li>
+                    <h2>
+                        <a id="email" onclick="copyEmail(this)">
+                            <span>Islam_9t9@yahoo.com</span>
+                        </a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="https://www.facebook.com/jeezoii">Facebook</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="https://www.instagram.com/islamaf_/">Instagram</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="http://t.me/islamaf1">Telegram</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="https://www.linkedin.com/in/islam-abdelfattah-31661b151/">LinkedIn</a>
+                    </h2>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function copyEmail(that) {
+            var inp = document.createElement('input');
+            document.body.appendChild(inp)
+            inp.value = that.textContent
+            inp.select();
+            document.execCommand('copy', false);
+            inp.remove();
+        } 
+    </script>
+</body>
+
+</html>

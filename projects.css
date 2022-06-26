@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.projects {
+    /* margin: 0 20rem; */
+    /* margin-left: 5rem; */
+    margin: 0;
+}
+
+.myprojects {
+    text-align: center;
+}
+
+.myprojects h1 {
+    font-size: 2em;
+    color: #9900ff;
+}
+
+.projects-list h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+}
+
+.projects-list {
+    margin-left: 13rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.projects-list li {
+    width: 60%;
+    padding: 1.2rem 0px;
+    transition: all 0.8s ease-in-out;
+}
+
+.projects-list li p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #9900ff;
+}
+
+.projects-list li:hover {
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .myprojects h1 {
+        font-size: 1em;
+        color: #9900ff;
+    }
+
+    .projects-list h2 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5em;
+    }
+
+    .projects-list {
+        margin-left: 1rem;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .projects-list li {
+        width: 100%;
+        padding: 1.2rem 0px;
+    }
+}

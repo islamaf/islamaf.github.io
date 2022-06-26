@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.contact {
+    margin: 0 13rem;
+}
+
+.contact p {
+    font-size: 1.85em;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contact ul {
+    font-size: 1.85em;
+    color: #9900ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-list li {
+    text-align: left;
+    padding-top: 10px;
+    /* margin-left: 5%; */
+}
+
+.content-list li a {
+    transition: all 0.8s ease;
+}
+
+.content-list li a:hover {
+    margin-left: 40px;
+    transition: all 0.8s ease;
+}
+
+#email {
+    cursor: pointer;
+}
+
+#email:hover span {
+    display: none;
+}
+
+#email:hover:before {
+    content: "Copy to clipboard";
+}
+
+#email:active::before {
+    content: "Copied!";
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        margin: 0 1rem;
+    }
+
+    .contact p {
+        font-size: 1.25em;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .contact ul {
+        font-size: 1.25em;
+        color: #9900ff;
+        font-family: 'Montserrat', sans-serif;
+    }
+}

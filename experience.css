@@ -1,0 +1,51 @@
+.experience {
+    margin: 0 13rem;
+}
+
+/* .work-xp {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} */
+
+.xp {
+    margin-bottom: 1rem;
+}
+
+.xp h2 {
+    font-size: 1.85em;
+    color: #9900ff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.xp h3,
+ul {
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.xp ul {
+    line-height: 1cm;
+}
+
+@media screen and (max-width: 768px) {
+    .experience {
+        margin: 0 2rem;
+    }
+
+    .xp h2 {
+        font-size: 1.25em;
+        color: #9900ff;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .xp h3,
+    ul {
+        font-size: 1.2em;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .xp ul {
+        line-height: 0.5cm;
+    }
+}

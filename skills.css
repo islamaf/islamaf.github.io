@@ -1,0 +1,40 @@
+.skills {
+    margin: 0 10rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid-item h2 {
+    font-size: 1.85em;
+    color: #9900ff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.grid-item ul {
+    line-height: 1cm;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+
+    .grid-item {
+        padding: 1rem;
+    }
+
+    .skills {
+        margin: 0 0rem;
+    }
+}
