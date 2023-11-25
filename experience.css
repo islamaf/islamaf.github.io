@@ -1,12 +1,15 @@
 .experience {
-    margin: 0 13rem;
+    margin: 0rem 13rem;
 }
 
-/* .work-xp {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-} */
+.work-xp {
+    line-height: 1.4;
+}
+
+.work-xp li {
+    list-style: circle;
+    line-height: 1.6;
+}
 
 .xp {
     margin-bottom: 1rem;
